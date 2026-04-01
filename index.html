@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio com estética dystopian, glitch e monocromática." />
+  <title>Adriel — Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__eyebrow">initializing</span>
+      <h1 class="loader__title glitch" data-text="PORTFÓLIO">PORTFÓLIO</h1>
+      <p class="loader__text">carregando identidade visual / interface / movimento</p>
+    </div>
+  </div>
+
+  <div class="noise"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <span class="brand__mark"></span>
+      <span class="brand__text">ADRIEL.FELL</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">Sobre</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero panel">
+      <div class="hero__content">
+        <p class="kicker">porto alegre · portfolio 2026</p>
+        <h1 class="hero__title glitch" data-text="INTERFACE.">
+          INTERFACE.
+        </h1>
+        <h2 class="hero__subtitle">
+          Um portfólio monocromático com clima futurista, transições agressivas e foco em presença visual.
+        </h2>
+
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#projects">Ver projetos</a>
+          <a class="btn btn--ghost" href="#contact">Falar comigo</a>
+        </div>
+
+        <div class="stats">
+          <div>
+            <strong>UI / UX</strong>
+            <span>layout, fluxo, animação</span>
+          </div>
+          <div>
+            <strong>Front-end</strong>
+            <span>HTML, CSS, JS</span>
+          </div>
+          <div>
+            <strong>Branding</strong>
+            <span>identidade e impacto</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="orb orb--one"></div>
+        <div class="orb orb--two"></div>
+        <div class="card glass">
+          <p>STATUS</p>
+          <h3>System online</h3>
+          <span>interface pronta para evoluir com imagens, cases e motion.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Destaques">
+      <div class="ticker__track">
+        <span>glitch motion</span>
+        <span>monochrome system</span>
+        <span>cinematic layout</span>
+        <span>scroll interaction</span>
+        <span>glitch motion</span>
+        <span>monochrome system</span>
+        <span>cinematic layout</span>
+        <span>scroll interaction</span>
+      </div>
+    </section>
+
+    <section id="about" class="panel split">
+      <div class="section-label">
+        <span>01</span>
+        <h2>Sobre</h2>
+      </div>
+      <div class="section-copy">
+        <p>
+          Esta base foi pensada para um portfólio forte, editorial e com sensação de campanha digital.
+          Ela usa contraste alto, tipografia pesada, bordas duras e camadas com ruído para dar profundidade.
+        </p>
+        <p>
+          Troque os blocos de texto, imagens e projetos conforme sua área. O esqueleto já deixa tudo com
+          aparência premium mesmo antes de inserir conteúdo final.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="panel projects">
+      <div class="section-label">
+        <span>02</span>
+        <h2>Projetos</h2>
+      </div>
+
+      <article class="project-card reveal">
+        <div class="project-card__meta">
+          <span>case 01</span>
+          <h3>Landing page experimental</h3>
+        </div>
+        <p>Hero com impacto, animação de entrada e bloco de conversão para apresentação de produto ou serviço.</p>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__meta">
+          <span>case 02</span>
+          <h3>Portfólio de desenvolvedor</h3>
+        </div>
+        <p>Estrutura editorial para exibir habilidades, stack, cases e contato com navegação limpa.</p>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="project-card__meta">
+          <span>case 03</span>
+          <h3>Identidade visual minimalista</h3>
+        </div>
+        <p>Base ideal para uma marca pessoal com tom técnico, visual sofisticado e foco em detalhes.</p>
+      </article>
+    </section>
+
+    <section class="panel marquee-panel">
+      <div class="marquee">
+        <div class="marquee__inner">
+          <span>design system</span>
+          <span>motion</span>
+          <span>glitch</span>
+          <span>editorial</span>
+          <span>portfolio</span>
+          <span>design system</span>
+          <span>motion</span>
+          <span>glitch</span>
+          <span>editorial</span>
+          <span>portfolio</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="panel contact">
+      <div class="section-label">
+        <span>03</span>
+        <h2>Contato</h2>
+      </div>
+      <div class="contact__box glass">
+        <p>Disponível para sites, páginas institucionais, landing pages e interfaces com foco visual.</p>
+        <a href="mailto:seuemail@exemplo.com" class="btn btn--solid">seuemail@exemplo.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026</span>
+    <span>Monochrome portfolio base</span>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
